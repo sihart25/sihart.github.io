@@ -1,0 +1,587 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="last-modified" content="2019-08-18 16:28:51 +0100">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- meta "search-domain" used for google site search function google_search() -->
+    <meta name="search-domain" value="">
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap-theme.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/lesson.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/syntax.css" />
+     <link rel="stylesheet" type="text/css" href="./assets/css/fonts.css" />
+
+    
+
+
+
+    <!-- Favicons for everyone -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./assets/favicons/dc/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/favicons/dc/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/favicons/dc/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/favicons/dc/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./assets/favicons/dc/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./assets/favicons/dc/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./assets/favicons/dc/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./assets/favicons/dc/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="./assets/favicons/dc/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="./assets/favicons/dc/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="./assets/favicons/dc/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./assets/favicons/dc/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="./assets/favicons/dc/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="Data Carpentry - Genomics Workshop Overview"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="./assets/favicons/dc/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="./assets/favicons/dc/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="./assets/favicons/dc/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="./assets/favicons/dc/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="./assets/favicons/dc/mstile-310x310.png" />
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+  <title>
+  Setup &ndash; Genomics Workshop Overview
+  </title>  
+
+  </head>
+  <body>
+
+    
+
+
+
+    <div class="container">
+      
+
+
+
+
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      
+      
+      <a href="http://datacarpentry.org" class="pull-left">
+        <img class="navbar-logo" src="./assets/img/dc-icon-black.svg" alt="Data Carpentry logo" />
+      </a>
+      
+
+      
+      <a class="navbar-brand" href="./">Home</a>
+
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+	
+        <li><a href="./CODE_OF_CONDUCT.html">Code of Conduct</a></li>
+
+        
+	
+        <li><a href="./setup.html">Setup</a></li>
+
+        
+        <li class="dropdown">
+          <a href="./" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Episodes <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            
+	    <li role="separator" class="divider"></li>
+            <li><a href="./aio.html">All in one page (Beta)</a></li>
+          </ul>
+        </li>
+	
+
+	
+	
+        <li class="dropdown">
+          <a href="./" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Extras <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="./reference.html">Reference</a></li>
+            
+            <li><a href="./AMI-setup/index.html">Launching your own AMI instances</a></li>
+            
+            <li><a href="./about/index.html">About</a></li>
+            
+            <li><a href="./faq/index.html">Frequently Asked Questions</a></li>
+            
+            <li><a href="./guide/index.html">Instructor Notes</a></li>
+            
+            <li><a href="./teaching_demos/index.html">Teaching Demonstrations</a></li>
+            
+          </ul>
+        </li>
+	
+
+	
+        <li><a href="./LICENSE.html">License</a></li>
+	
+	<li><a href="/edit//setup.md" data-checker-ignore>Improve this page <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></li>
+	
+      </ul>
+      <form class="navbar-form navbar-right" role="search" id="search" onsubmit="google_search(); return false;">
+        <div class="form-group">
+          <input type="text" id="google-search" placeholder="Search..." aria-label="Google site search">
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1 class="maintitle"><a href="./">Genomics Workshop Overview</a>: Setup</h1>
+
+<article>
+<h1 id="overview">Overview</h1>
+
+<p>This workshop is designed to be run on pre-imaged Amazon Web Services (AWS)
+instances. With the exception of a spreadsheet program, all of the software and data used in the workshop are hosted on an Amazon 
+Machine Image (AMI). Please follow the instructions below to prepare your computer for the workshop:</p>
+
+<ul>
+  <li>Required additional software + Option A <br />
+<strong>OR</strong></li>
+  <li>Required additional software + Option B</li>
+</ul>
+
+<h2 id="required-additional-software">Required additional software</h2>
+
+<p>This lesson requires a working spreadsheet program. If you don’t have a spreadsheet program already, you can use LibreOffice. It’s a free, open source spreadsheet program.</p>
+
+<blockquote class="solution">
+  <h2 id="windows">Windows</h2>
+  <ul>
+    <li>Install LibreOffice by going to <a href="https://www.libreoffice.org/download/libreoffice-fresh/">the installation page</a>. The version for Windows should automatically be selected. Click Download Version X.X.X (whichever is the most recent version). You will go to a page that asks about a donation, but you don’t need to make one. Your download should begin automatically.</li>
+    <li>Once the installer is downloaded, double click on it and LibreOffice should install.</li>
+    <li>Install PuTTY by going to <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">the installation page</a>. For most newer computers, click on putty-64bit-X.XX-installer.msi to download the 64-bit version. If you have an older laptop, you may need to get the 32-bit version putty-X.XX-installer.msi. If you aren’t sure whether you need the 64 or 32 bit version, you can check your laptop version by following <a href="https://support.microsoft.com/en-us/help/15056/windows-32-64-bit-faq">the instructions here</a></li>
+    <li>Once the installer is downloaded, double click on it, and PuTTY should install.</li>
+  </ul>
+</blockquote>
+
+<blockquote class="solution">
+  <h2 id="mac-os-x">Mac OS X</h2>
+  <ul>
+    <li>Install LibreOffice by going to <a href="https://www.libreoffice.org/download/libreoffice-fresh/">the installation page</a>. The version for Mac should automatically be selected. Click Download Version X.X.X (whichever is the most recent version). You will go to a page that asks about a donation, but you don’t need to make one. Your download should begin automatically.</li>
+    <li>Once the installer is downloaded, double click on it and LibreOffice should install.</li>
+  </ul>
+</blockquote>
+
+<blockquote class="solution">
+  <h2 id="linux">Linux</h2>
+  <ul>
+    <li>Install LibreOffice by going to <a href="https://www.libreoffice.org/download/libreoffice-fresh/">the installation page</a>. The version for Linux should automatically be selected. Click Download Version X.X.X (whichever is the most recent version). You will go to a page that asks about a donation, but you don’t need to make one. Your download should begin automatically.</li>
+    <li>Once the installer is downloaded, double click on it and LibreOffice should install.</li>
+  </ul>
+</blockquote>
+
+<p>Windows users should also download and install <a href="http://www.putty.org/">PuTTY</a>.</p>
+
+<h2 id="option-a-recommended-using-the-lessons-with-amazon-web-services-aws">Option A (<strong>Recommended</strong>): Using the lessons with Amazon Web Services (AWS)</h2>
+
+<p>To run your own instance of the server used for this workshop, follow these <a href="https://datacarpentry.org/genomics-workshop/AMI-setup/">instructions on creating an Amazon instance</a>. Use the AMI <code class="highlighter-rouge">ami-0985860a69ae4cb3d</code> (Data Carpentry Genomics Beta 2.0 (April 2019)) listed on the Community AMIs page. Please note that you must set your location as <code class="highlighter-rouge">N. Virginia</code> in order to access this community AMI. You can change your location in the upper right corner of the main AWS menu bar.</p>
+
+<p>The cost of using this AMI for a few days, with the t2.medium instance type is very low (about USD $1.50 per user, per day). Data Carpentry has <em>no</em> control over AWS pricing structure and provides this
+cost estimate with no guarantees. Please read AWS documentation on pricing for up-to-date information.</p>
+
+<p>If you are taking a Genomics Data Carpentry workshop, instances will be set up for you. Follow the instructions on <a href="http://www.datacarpentry.org/cloud-genomics/02-logging-onto-cloud/">connecting to Data Carpentry Genomics Amazon instances</a> to connect to the instance.</p>
+
+<p>If you’re an Instructor or Maintainer or want to contribute to these lessons, please get in touch with us <a href="mailto:team@carpentries.org">team@carpentries.org</a> and we will start instances for you.</p>
+
+<h2 id="option-b-using-the-lessons-on-your-local-machine">Option B: Using the lessons on your local machine</h2>
+
+<p>While not recommended, it is possible to work through the lessons on your local machine (i.e. without using
+AWS). To do this, you will need to install all of the software used in the workshop and obtain a copy of the
+dataset. Instructions for doing this are below.</p>
+
+<h3 id="data">Data</h3>
+
+<p>The data used in this workshop is available on FigShare. Because this workshop works with real data, be aware that file sizes for the data are large. Please read the FigShare page linked below for information about the data and access to the data files.</p>
+
+<p><a href="https://figshare.com/articles/Data_Carpentry_Genomics_beta_2_0/7726454">FigShare Data Carpentry Genomics Beta 2.0</a></p>
+
+<p>More information about these data will be presented in the <a href="http://www.datacarpentry.org/organization-genomics/data/">first lesson of the workshop</a>.</p>
+
+<h3 id="software">Software</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Software</th>
+      <th>Version</th>
+      <th>Manual</th>
+      <th>Available for</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/">FastQC</a></td>
+      <td>0.11.7</td>
+      <td><a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/">Link</a></td>
+      <td>Linux, MacOS, Windows</td>
+      <td>Quality control tool for high throughput sequence data.</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.usadellab.org/cms/?page=trimmomatic">Trimmomatic</a></td>
+      <td>0.38</td>
+      <td><a href="http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/TrimmomaticManual_V0.32.pdf">Link</a></td>
+      <td>Linux, MacOS, Windows</td>
+      <td>A flexible read trimming tool for Illumina NGS data.</td>
+    </tr>
+    <tr>
+      <td><a href="http://bio-bwa.sourceforge.net/">BWA</a></td>
+      <td>0.7.17</td>
+      <td><a href="http://bio-bwa.sourceforge.net/bwa.shtml">Link</a></td>
+      <td>Linux, MacOS</td>
+      <td>Mapping DNA sequences against reference genome.</td>
+    </tr>
+    <tr>
+      <td><a href="http://samtools.sourceforge.net/">SAMtools</a></td>
+      <td>1.9</td>
+      <td><a href="http://www.htslib.org/doc/samtools.html">Link</a></td>
+      <td>Linux, MacOS</td>
+      <td>Utilities for manipulating alignments in the SAM format.</td>
+    </tr>
+    <tr>
+      <td><a href="https://samtools.github.io/bcftools/">BCFtools</a></td>
+      <td>1.8</td>
+      <td><a href="https://samtools.github.io/bcftools/bcftools.html">Link</a></td>
+      <td>Linux, MacOS</td>
+      <td>Utilities for variant calling and manipulating VCFs and BCFs.</td>
+    </tr>
+    <tr>
+      <td><a href="http://software.broadinstitute.org/software/igv/home">IGV</a></td>
+      <td><a href="https://software.broadinstitute.org/software/igv/download">Link</a></td>
+      <td><a href="https://software.broadinstitute.org/software/igv/UserGuide">Link</a></td>
+      <td>Linux, MacOS, Windows</td>
+      <td>Visualization and interactive exploration of large genomics datasets.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="quickstart-software-installation-instructions">QuickStart Software Installation Instructions</h3>
+
+<p>These are the QuickStart installation instructions. They assume familiarity with the command line and with installation in general. As there are different operating systems and many different versions of operating systems and environments, these may not work on your computer. If an installation doesn’t work for you, please refer to the user guide for the tool, listed in the table above.</p>
+
+<p>We have installed software using <a href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a>. Miniconda is a package manager that simplifies the installation process. Please first install miniconda3 (installation instructions below), and then proceed to the installation of individual tools.</p>
+
+<h3 id="miniconda3">Miniconda3</h3>
+
+<blockquote class="solution">
+  <h2 id="macos">MacOS</h2>
+
+  <p>To install miniconda3, type:</p>
+
+  <div class="bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+$ bash Miniconda3-latest-MacOSX-x86_64.sh
+</code></pre></div>  </div>
+  <p>Then, follow the instructions that you are prompted with on the screen to install Miniconda3.</p>
+</blockquote>
+
+<h3 id="fastqc">FastQC</h3>
+
+<blockquote class="solution">
+  <h2 id="macos-1">MacOS</h2>
+
+  <p>To install FastQC, type:</p>
+
+  <div class="bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ conda install -c bioconda fastqc=0.11.7=5
+</code></pre></div>  </div>
+</blockquote>
+
+<blockquote class="solution">
+  <h2 id="fastqc-source-code-installation">FastQC Source Code Installation</h2>
+
+  <p>If you prefer to install from source, follow the directions below:</p>
+
+  <div class="bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd ~/src
+$ curl -O http://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.7.zip
+$ unzip fastqc_v0.11.7.zip
+</code></pre></div>  </div>
+
+  <p>Link the fastqc executable to the ~/bin folder that
+you have already added to the path.</p>
+
+  <div class="bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ln -sf ~/src/FastQC/fastqc ~/bin/fastqc
+</code></pre></div>  </div>
+
+  <p>Due to what seems a packaging error
+the executable flag on the fastqc program is not set.
+We need to set it ourselves.</p>
+
+  <div class="bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ chmod +x ~/bin/fastqc
+</code></pre></div>  </div>
+</blockquote>
+
+<p><strong>Test your installation by running:</strong></p>
+
+<div class="bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ fastqc -h
+</code></pre></div></div>
+
+<h3 id="trimmomatic">Trimmomatic</h3>
+
+<blockquote class="solution">
+  <h2 id="macos-2">MacOS</h2>
+
+  <div class="bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda install -c bioconda trimmomatic=0.38=0
+</code></pre></div>  </div>
+</blockquote>
+
+<blockquote class="solution">
+  <h2 id="trimmomatic-source-code-installation">Trimmomatic Source Code Installation</h2>
+
+  <p>If you prefer to install from source, follow the directions below:</p>
+
+  <div class="bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd ~/src
+$ curl -O http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/Trimmomatic-0.38.zip
+$ unzip Trimmomatic-0.38.zip
+</code></pre></div>  </div>
+
+  <p>The program can be invoked via:</p>
+
+  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ java -jar ~/src/Trimmomatic-0.38/trimmomatic-0.38.jar
+</code></pre></div>  </div>
+
+  <p>The ~/src/Trimmomatic-0.38/adapters/ directory contains
+Illumina specific adapter sequences.</p>
+
+  <div class="bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ls ~/src/Trimmomatic-0.38/adapters/
+</code></pre></div>  </div>
+</blockquote>
+
+<p><strong>Test your installation by running:</strong> (assuming things are installed in ~/src)</p>
+
+<div class="bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ java -jar ~/src/Trimmomatic-0.38/trimmomatic-0.38.jar
+</code></pre></div></div>
+
+<blockquote class="solution">
+  <h2 id="simplify-the-invocation-or-to-test-your-installation-if-you-installed-with-miniconda3">Simplify the Invocation, or to Test your installation if you installed with miniconda3:</h2>
+
+  <p>To simplify the invocation you could also create a script in the ~/bin folder:</p>
+
+  <div class="bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ echo '#!/bin/bash' &gt; ~/bin/trimmomatic
+$ echo 'java -jar ~/src/Trimmomatic-0.36/trimmomatic-0.36.jar $@' &gt;&gt; ~/bin/trimmomatic
+$ chmod +x ~/bin/trimmomatic
+</code></pre></div>  </div>
+
+  <p>Test your script by running:</p>
+
+  <div class="bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ trimmomatic
+</code></pre></div>  </div>
+</blockquote>
+
+<h3 id="bwa">BWA</h3>
+
+<blockquote class="solution">
+  <h2 id="macos-3">MacOS</h2>
+
+  <div class="bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda install -c bioconda bwa=0.7.17=ha92aebf_3
+</code></pre></div>  </div>
+</blockquote>
+
+<blockquote class="solution">
+  <h2 id="bwa-source-code-installation">BWA Source Code Installation</h2>
+
+  <p>If you prefer to install from source, follow the instructions below:</p>
+
+  <div class="bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd ~/src
+$ curl -OL http://sourceforge.net/projects/bio-bwa/files/bwa-0.7.17.tar.bz2
+$ tar jxvf bwa-0.7.17.tar.bz2
+$ cd bwa-0.7.17
+$ make
+$ export PATH=~/src/bwa-0.7.17:$PATH
+</code></pre></div>  </div>
+</blockquote>
+
+<p><strong>Test your installation by running:</strong></p>
+
+<div class="bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ bwa
+</code></pre></div></div>
+
+<h3 id="samtools">SAMtools</h3>
+
+<blockquote class="solution">
+  <h2 id="macos-4">MacOS</h2>
+
+  <div class="bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ conda install -c bioconda samtools=1.9=h8ee4bcc_1
+</code></pre></div>  </div>
+</blockquote>
+
+<blockquote class="callout">
+  <h2 id="samtools-versions">SAMtools Versions</h2>
+  <p>SAMtools has changed the command line invocation (for the better). But this means that most of the tutorials
+on the web indicate an older and obsolete usage.</p>
+
+  <p>Using SAMtools version 1.9 is important to work with the commands we present in these lessons.</p>
+</blockquote>
+
+<blockquote class="solution">
+  <h2 id="samtools-source-code-installation">SAMtools Source Code Installation</h2>
+
+  <p>If you prefer to install from source, follow the instructions below:</p>
+
+  <div class="bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd ~/src
+$ curl -OkL https://github.com/samtools/samtools/releases/download/1.9/samtools-1.9.tar.bz2
+$ tar jxvf samtools-1.9.tar.bz2
+$ cd samtools-1.9
+$ make
+</code></pre></div>  </div>
+
+  <p>Add directory to the path if necessary:</p>
+
+  <div class="bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ echo export `PATH=~/src/samtools-1.9:$PATH` &gt;&gt; ~/.bashrc
+$ source ~/.bashrc
+</code></pre></div>  </div>
+</blockquote>
+
+<p><strong>Test your installation by running:</strong></p>
+
+<div class="bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ samtools
+</code></pre></div></div>
+
+<h3 id="bcftools">BCFtools</h3>
+
+<blockquote class="solution">
+  <h2 id="macos-5">MacOS</h2>
+
+  <div class="bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ conda install -c bioconda bcftools=1.8=h4da6232_3 
+</code></pre></div>  </div>
+</blockquote>
+
+<blockquote class="solution">
+  <h2 id="bcf-tools-source-code-installation">BCF tools Source Code Installation</h2>
+
+  <p>If you prefer to install from source, follow the instructions below:</p>
+
+  <div class="bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd ~/src
+$ curl -OkL https://github.com/samtools/bcftools/releases/download/1.8/bcftools-1.8.tar.bz2
+$ tar jxvf bcftools-1.8.tar.bz2
+$ cd bcftools-1.8
+$ make
+</code></pre></div>  </div>
+
+  <p>Add directory to the path if necessary:</p>
+
+  <div class="bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ echo export `PATH=~/src/bcftools-1.8:$PATH` &gt;&gt; ~/.bashrc
+$ source ~/.bashrc
+</code></pre></div>  </div>
+</blockquote>
+
+<p><strong>Test your installation by running:</strong></p>
+
+<div class="bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ bcftools
+</code></pre></div></div>
+
+<h3 id="igv">IGV</h3>
+
+<ul>
+  <li><a href="https://software.broadinstitute.org/software/igv/download">Download the IGV installation files</a></li>
+  <li>Install and run IGV using the <a href="https://software.broadinstitute.org/software/igv/download">instructions for your operating system</a>.</li>
+</ul>
+
+</article>
+
+      
+      
+
+
+
+
+
+
+<footer>
+  <hr/>
+  <div class="row">
+    <div class="col-md-6 copyright" align="left">
+	
+	Licensed under <a href="">CC-BY 4.0</a> 2018–2019
+	by <a href="https://carpentries.org/">The Carpentries</a>
+        <br>
+        Licensed under <a href="">CC-BY 4.0</a> 2016–2018
+	by <a href="http://datacarpentry.org">Data Carpentry</a>
+	
+    </div>
+    <div class="col-md-6 help-links" align="right">
+	
+	<a href="/edit//setup.md" data-checker-ignore>Edit on GitHub</a>
+	
+	/
+	<a href="/blob//CONTRIBUTING.md" data-checker-ignore>Contributing</a>
+	/
+	<a href="/">Source</a>
+	/
+	<a href="/blob//CITATION" data-checker-ignore>Cite</a>
+	/
+	<a href="mailto:team@carpentries.org">Contact</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" align="center">
+      <p class="text-muted">
+        <small> Using <a href="https://github.com/carpentries/carpentries-theme/">The Carpentries theme</a> &mdash; Site last built on: 2019-08-18 16:28:51 +0100.</small>
+      </p>
+    </div>
+  </div>
+</footer>
+
+      
+    </div>
+    
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/lesson.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-37305346-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  </body>
+</html>
