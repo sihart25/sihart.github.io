@@ -15,7 +15,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.7
+          python-version: '3.x'
       - name: Install codespell
         run: |
           pip3 install codespell
@@ -30,6 +30,7 @@ jobs:
       - uses: actions/setup-ruby@v1
         with:
           ruby-version: '2.7'
+          bundler-cache: true
       - name: Install basic requirements
         run: |
           # Need this library for nokogiri
