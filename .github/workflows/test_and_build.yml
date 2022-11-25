@@ -15,7 +15,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.7
+          python-version: '3.x'
       - name: Install codespell
         run: |
           pip3 install codespell
@@ -24,12 +24,13 @@ jobs:
           make spellcheck
 
   check_lesson_and_build_default:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-ruby@v1
         with:
           ruby-version: '2.7'
+          bundler-cache: true
       - name: Install basic requirements
         run: |
           # Need this library for nokogiri
@@ -52,16 +53,11 @@ jobs:
           make --always-make site
 
   build-specific-sites:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     strategy:
       matrix:
         HPC_JEKYLL_CONFIG:
-          - ComputeCanada_Graham_slurm
-          - EPCC_Cirrus_pbs
-          - NIST_CTCMS_slurm
-          - Norway_SIGMA2_SAGA_slurm
-          - UCL_Myriad_sge
-          - Magic_Castle_EESSI_slurm
+          - Warrick_Sulis_slurm
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-ruby@v1
