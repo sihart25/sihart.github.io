@@ -1,9 +1,9 @@
 #------------------------------------------------------------
-# ComputeCanada: Graham + Slurm
+# Warrick: Sulis + Slurm
 #------------------------------------------------------------
 
 # Cluster host and scheduler options: the defaults come from
-# Graham at Compute Canada, running Slurm. Other options can
+# sulis at warrick, running Slurm. Other options can
 # be found in the library of snippets,
 # `_includes/snippets_library`. To use one, replace options
 # below with those in `_config_options.yml` from the
@@ -24,14 +24,14 @@ local:
   bash_shebang: "#!/usr/bin/env bash"
 
 remote:
-  name: "Graham"
-  login: "graham.computecanada.ca"
-  host: "gra-login1"
+  name: "sulis"
+  login: "login.sulis.ac.uk"
+  host: "login1"
   node: "aci-377"
-  location: "University of Waterloo"
+  location: "University of Warrick"
   homedir: "/home"
   user: "yourUsername"
-  prompt: "[yourUsername@gra-login1 ~]$"
+  prompt: "[yourUsername@login01(sulis) ~]$"
   bash_shebang: "#!/usr/bin/env bash"
 
 sched:
