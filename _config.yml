@@ -27,14 +27,14 @@ local:
   bash_shebang: "#!/usr/bin/env bash"
 
 remote:
-  name: "Graham"
-  login: "graham.computecanada.ca"
-  host: "gra-login1"
+  name: "sulis"
+  login: "login.sulis.ac.uk"
+  host: "login1"
   node: "aci-377"
-  location: "University of Waterloo"
+  location: "University of Warrick"
   homedir: "/home"
   user: "yourUsername"
-  prompt: "[yourUsername@gra-login1 ~]$"
+  prompt: "[yourUsername@login01(sulis) ~]$"
   module_python3: "python3"
   bash_shebang: "#!/usr/bin/env bash"
 
