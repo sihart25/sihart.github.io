@@ -66,6 +66,8 @@ as a serial process.
     (j)  End.
 
 ```
+{: .language-bash}
+
 Let's write a Python program, `pi.py`, to estimate π for us.
 Start by importing the `numpy` module for calculating the results,
 and the `sys` module to process command-line parameters:
