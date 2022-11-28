@@ -411,7 +411,7 @@ included.
 
 > ## MPI Runtime Arguments
 >
-> On their own, commands such as `mpiexec` can take many arguments specifying
+> On their own, commands such as `srun` can take many arguments specifying
 > how many machines will participate in the execution,
 > and you might need these if you would like to run an MPI program on your
 > laptop (for example).
