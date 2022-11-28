@@ -1,19 +1,17 @@
 ```
 PARTITION AVAIL  TIMELIMIT  NODES  STATE NODELIST
-normal*      up 7-00:00:00      1  down* c5-12
-normal*      up 7-00:00:00     87    mix c1-[7,13-15,19,22-24,28,31,33,3.......
-normal*      up 7-00:00:00    110  alloc c1-[1-6,8-9,11-12,16-18,20-21,........
-normal*      up 7-00:00:00      1   idle c1-10
-bigmem       up 14-00:00:0      1  drain c6-3
-bigmem       up 14-00:00:0     10    mix c3-[29-31,53,56],c6-[1,4-7]
-bigmem       up 14-00:00:0      1  alloc c6-2
-bigmem       up 14-00:00:0     24   idle c3-[32-52,54-55],c6-8
-accel        up 14-00:00:0      3    mix c7-[1-2,8]
-accel        up 14-00:00:0      5  alloc c7-[3-7]
-optimist     up   infinite      1  down* c5-12
-optimist     up   infinite      1  drain c6-3
-optimist     up   infinite    100    mix c1-[7,13-15,19,22-24,28,31,33,35,37...
-optimist     up   infinite    116  alloc c1-[1-6,8-9,11-12,16-18,20-21,25-27...
-optimist     up   infinite     25   idle c1-10,c3-[32-52,54-55],c6-8
+compute*     up 2-00:00:00     34    mix node[001-002,009,012-013,018,020-021,024-027,029-033,046,053,055,057-060,063-064,066-072,129]
+compute*     up 2-00:00:00     83  alloc node[003-008,010-011,014-017,019,022-023,047-052,054,056,061-062,065,073-078,088-113,128,130-138,140-154]
+compute*     up 2-00:00:00     50   idle node[028,034-045,079-087,114-127,139,155-167]
+devel        up    1:00:00     34    mix node[001-002,009,012-013,018,020-021,024-027,029-033,046,053,055,057-060,063-064,066-072,129]
+devel        up    1:00:00     83  alloc node[003-008,010-011,014-017,019,022-023,047-052,054,056,061-062,065,073-078,088-113,128,130-138,140-154]
+devel        up    1:00:00     50   idle node[028,034-045,079-087,114-127,139,155-167]
+gpu          up 2-00:00:00      1    mix gpu016
+gpu          up 2-00:00:00     29   idle gpu[001-015,017-030]
+gpu-devel    up    1:00:00      1    mix gpu016
+gpu-devel    up    1:00:00     29   idle gpu[001-015,017-030]
+hmem         up 2-00:00:00      1    mix hmem001
+hmem         up 2-00:00:00      3   idle hmem[002-004]
+vhmem        up 2-00:00:00      3   idle vhmem[001-003]
 ```
 {: .output}
