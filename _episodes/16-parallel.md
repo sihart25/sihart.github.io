@@ -49,6 +49,25 @@ to calculate π through a command-line parameter.
 This script will only use a single CPU for its entire run, so it's classified
 as a serial process.
 
+### The Algorithm 
+
+```
+
+    Set **N_SAMPLES**
+    (a)  Initialize **circle_points**, **square_points** and **interval** to 0. 
+    (b)  Generate random point x. 
+    (c)  Generate random point y. 
+    (d)  Calculate d = x*x + y*y. 
+    (e)  If d <= 1.0, increment **circle_points**. 
+    (f)  Increment **square_points**. 
+    (g)  Increment **interval**. 
+    (h)  If increment < N_SAMPLES, repeat from (b). 
+    (i)  Calculate pi = 4*(**circle_points**/**square_points**). 
+    (j)  End.
+
+```
+{: .language-bash}
+
 Let's write a Python program, `pi.py`, to estimate π for us.
 Start by importing the `numpy` module for calculating the results,
 and the `sys` module to process command-line parameters:
@@ -595,6 +614,25 @@ You can also increase the number of CPUs.
 * How good is the value for π?
 * How much memory did it need?
 * How long did the job take to run?
+
+### Sulis Per node limits
+
+|Limit	| Compute |	High Memory |	GPU |
+|max no. of cores per node |	128	| 128	| 128|
+|max memory per core |	3850 MB |	7700 MB	| 3850 MB|
+|max memory per node |	492,800 MB |	985,600 MB | 492,800 MB|
+|max gpus per node	 | N/A	| N/A	| 3 A100s|
+
+### Sulis Per Partition Limits
+
+|Limit                       |	compute |	devel	| gpu |	gpu-devel |	hmem |
+|max walltime	               | 48 hours	| 1 hour |	48 hours |	1 hour |	48 hours |
+|max cores per job	         | 3840	| 256	| 1290 |	128 |	384 |
+|max cores per user	         | 7680	| 256	| 1290 |	128 |	384 |
+|max gpus per job	           | N/A	| N/A	| 30	| 3	| N/A |
+|max gpus per user	         | N/A	| N/A |	30	| 3 |	N/A |
+|max running jobs (per user) |	200	| 2	| 30	| 2 |	100 |
+|max jobs in queue (per user)|	500	| 4 |	200	| 4 |	200 |
 
 ## How Much Does MPI Improve Performance?
 
