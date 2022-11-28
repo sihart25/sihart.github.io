@@ -26,12 +26,12 @@ local:
 remote:
   name: "Sulis"
   login: "login.sulis.ac.uk"
-  host: "node046.sulis.ac.uk"
-  node: "node046(sulis)"
+  host: "login01.sulis.hpc"
+  node: "login01(sulis)"
   location: "University of Warrick, UK"
   homedir: "/gpfs/home/firstletter/yourUsername"
   user: "yourUsername"
-  prompt: "[yourUsername@node046(sulis) ~]$"
+  prompt: "[yourUsername@login01(sulis) ~]$"
   bash_shebang: "#!/bin/bash"
 
 sched:
