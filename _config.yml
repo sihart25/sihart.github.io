@@ -30,12 +30,12 @@ local:
 remote:
   name: "Sulis"
   login: "login.sulis.ac.uk"
-  host: "node046.sulis.ac.uk"
+  host: "login01.sulis.hpc"
   node: "node046(sulis)"
   location: "University of Warrick, UK"
   homedir: "/gpfs/home/firstletter/yourUsername"
   user: "yourUsername"
-  prompt: "[yourUsername@node046(sulis) ~]$"
+  prompt: "[yourUsername@login01(sulis) ~]$"
   bash_shebang: "#!/bin/bash"
 
 sched:
@@ -89,7 +89,7 @@ title: "Introduction to High-Performance Computing"
 email: "team@carpentries.org"
 
 # Life cycle stage of the lesson ("pre-alpha", "alpha", "beta", "stable")?
-life_cycle: "alpha"
+life_cycle: "stable"
 
 #------------------------------------------------------------
 # Generic settings (should not need to change).
