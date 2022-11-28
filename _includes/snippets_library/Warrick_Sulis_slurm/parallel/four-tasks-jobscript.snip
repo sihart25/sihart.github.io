@@ -7,7 +7,8 @@
 {{ site.sched.comment }} --mem=3G
 
 # Load the computing environment we need
-module load python3
+module purge
+ module load GCCcore/11.3.0 Python/3.10.4
 
 # Execute the task
 mpiexec python pi.py 100000000
