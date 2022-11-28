@@ -53,16 +53,16 @@ as a serial process.
 
 ```
 
-    Set **N_SAMPLES**
-    (a)  Initialize **circle_points**, **square_points** and **interval** to 0. 
+    Set <i>N_SAMPLES</i>
+    (a)  Initialize <i>circle_points</i>, <i>square_points</i> and <i>interval</i> to 0. 
     (b)  Generate random point x. 
     (c)  Generate random point y. 
-    (d)  Calculate d = x*x + y*y. 
-    (e)  If d <= 1.0, increment **circle_points**. 
-    (f)  Increment **square_points**. 
-    (g)  Increment **interval**. 
+    (d)  Calculate radii = x*x + y*y. 
+    (e)  If radii <= 1.0, increment <i>circle_points</i>. 
+    (f)  Increment <i>square_points</i>. 
+    (g)  Increment <i>interval</i>. 
     (h)  If increment < N_SAMPLES, repeat from (b). 
-    (i)  Calculate pi = 4*(**circle_points**/**square_points**). 
+    (i)  Calculate pi = 4*(<i>circle_points</i>/<i>square_points</i>). 
     (j)  End.
 
 ```
