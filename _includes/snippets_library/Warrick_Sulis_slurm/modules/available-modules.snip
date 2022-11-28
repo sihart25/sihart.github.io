@@ -1,26 +1,38 @@
 ```
----------------------- /cluster/modulefiles/all -------------------------
-4ti2/1.6.9-GCC-8.2.0-2.31.1            gmsh/4.5.6-foss-2019b-Python-3.7.4
-ABySS/2.0.2-gompi-2019a                gnuplot/5.2.6-GCCcore-8.2.0
-AdapterRemoval/2.3.1-foss-2018b        gnuplot/5.2.8-GCCcore-8.3.0
-AdapterRemoval/2.3.1-GCC-8.2.0-2.31.1  Go/1.13.1
-ADF/2019.103+StaticMKL                 gompi/2018b
-AdmixTools/5.1-GCC-7.3.0-2.30          gompi/2019a
-ADMIXTURE/1.3.0                        gompi/2019b
+--------------------------------------------------------------------------------------- /sulis/easybuild/modules/Core ----------------------------------------------------------------------------------------
+   Bison/3.3.2            EasyBuild/4.5.3        GCCcore/11.2.0                     ResMap/1.1.4                        foss/2020a              gompi/2020a                     intel/2019b
+   Bison/3.5.3            EasyBuild/4.6.0        GCCcore/11.3.0           (D)       ant/1.10.9-Java-11                  foss/2020b              gompi/2020b                     intel/2022a       (D)
+   Bison/3.7.1            EasyBuild/4.6.1 (D)    GPAW-setups/0.9.20000              binutils/2.32                       foss/2021a              gompi/2021a                     iomkl/2019b
+   Bison/3.7.6            Eigen/3.3.7            Java/1.8.0_292-OpenJDK   (1.8)     binutils/2.34                       foss/2021b              gompi/2021b                     iompi/2019b
+   Bison/3.8.2     (D)    GCC/8.3.0              Java/11.0.2              (D:11)    binutils/2.35                       foss/2022a       (D)    gompi/2022a              (D)    ncurses/6.0
+   CUDA/11.3.1            GCC/9.3.0              Julia/1.6.2-linux-x86_64           binutils/2.36.1                     fosscuda/2019b          gompic/2019b                    ncurses/6.1
+   CUDA/11.4.1            GCC/10.2.0             M4/1.4.18                          binutils/2.37                       fosscuda/2020b   (D)    gompic/2020b             (D)    ncurses/6.2       (D)
+   CUDA/11.5.0     (D)    GCC/10.3.0             M4/1.4.19                (D)       binutils/2.38                (D)    gcccuda/2019b           help2man/1.47.4                 pkg-config/0.29.2
+   CUDAcore/11.1.1        GCC/11.2.0             MATLAB/2021a_Update_5              cuDNN/8.0.4.30-CUDA-11.1.1          gcccuda/2020b    (D)    iccifort/2019.5.281             zlib/1.2.11
+   EasyBuild/4.4.1        GCC/11.3.0      (D)    MATLAB/2021b_Update_2    (D)       cuDNN/8.2.1.32-CUDA-11.3.1          gettext/0.19.8.1        iimpi/2019b                     zlib/1.2.12       (D)
+   EasyBuild/4.4.2        GCCcore/8.3.0          MATLAB/2022a                       cuDNN/8.3.2.44-CUDA-11.5.0   (D)    gettext/0.20.1          iimpi/2022a              (D)
+   EasyBuild/4.5.0        GCCcore/9.3.0          NVHPC/21.11                        cuTENSOR/1.2.2.5-CUDA-11.1.1        gettext/0.21     (D)    imkl/2021.4.0
+   EasyBuild/4.5.1        GCCcore/10.2.0         Neovim/0.6.1                       flex/2.6.4                          gomkl/2019b             imkl/2022.1.0            (D)
+   EasyBuild/4.5.2        GCCcore/10.3.0         OpenSSL/1.1                        foss/2019b                          gompi/2019b             intel-compilers/2022.1.0
 
-[removed most of the output here for clarity]
+---------------------------------------------------------------------------------------- /sulis/institutions/modules -----------------------------------------------------------------------------------------
+   aston    birmingham    nottingham    qmul    warwick
 
------------------------ /cluster/modulefiles/external ---------------------
-   appusage/1.0    hpcx/2.4    hpcx/2.5    hpcx/2.6
+--------------------------------------------------------------------------------------------- /sulis/modules/ocf ---------------------------------------------------------------------------------------------
+   amd/aocc/2.3        amd/aocl/2.2        amd/cc-3.0    defaults     gcc/10.3.0    (D)    jemalloc/5.2.1    nvidia/cuda-11.2    pmix/2.2.5
+   amd/aocc/3.0 (D)    amd/aocl/3.0 (D)    cuda/11.3     gcc/9.3.0    golang/1.16.5        knem/1.1.4.90     openmpi/4.1.1       pmix/3.2.3 (D)
+
+------------------------------------------------------------------------------------------- /usr/share/modulefiles -------------------------------------------------------------------------------------------
+   pmi/pmix-x86_64
+
+----------------------------------------------------------------------------------- /usr/share/lmod/lmod/modulefiles/Core ------------------------------------------------------------------------------------
+   lmod    settarg
 
   Where:
-   S:        Module is Sticky, requires --force to unload or purge
-   L:        Module is loaded
-   Aliases:  Aliases exist: foo/1.2.3 (1.2) means that "module load foo/1.2"
-             will load foo/1.2.3
+   Aliases:  Aliases exist: foo/1.2.3 (1.2) means that "module load foo/1.2" will load foo/1.2.3
+   D:        Default Module
 
-Use "module spider" to find all possible modules.
-Use "module keyword key1 key2 ..." to search for all possible modules matching
-any of the "keys".
+Use "module spider" to find all possible modules and extensions.
+Use "module keyword key1 key2 ..." to search for all possible modules matching any of the "keys".
 ```
 {: .output}
