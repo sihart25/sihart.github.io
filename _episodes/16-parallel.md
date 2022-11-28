@@ -49,6 +49,23 @@ to calculate π through a command-line parameter.
 This script will only use a single CPU for its entire run, so it's classified
 as a serial process.
 
+### The Algorithm 
+
+```
+
+    Set **N_SAMPLES**
+    (a)  Initialize **circle_points**, **square_points** and **interval** to 0. 
+    (b)  Generate random point x. 
+    (c)  Generate random point y. 
+    (d)  Calculate d = x*x + y*y. 
+    (e)  If d <= 1.0, increment **circle_points**. 
+    (f)  Increment **square_points**. 
+    (g)  Increment **interval**. 
+    (h)  If increment < N_SAMPLES, repeat from (b). 
+    (i)  Calculate pi = 4*(**circle_points**/**square_points**). 
+    (j)  End.
+
+```
 Let's write a Python program, `pi.py`, to estimate π for us.
 Start by importing the `numpy` module for calculating the results,
 and the `sys` module to process command-line parameters:
