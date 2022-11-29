@@ -51,20 +51,19 @@ as a serial process.
 
 ### The Algorithm 
 
-<pre><code>
+```
     Set <i>N_SAMPLES</i>
-    (a)  Initialize <i>circle_points</i>, <i>square_points</i> and <i>interval</i> to 0. 
+    (a)  Initialize __**circle_points**__,__**square_points**__ and __**interval**__ to 0. 
     (b)  Generate random point x. 
     (c)  Generate random point y. 
     (d)  Calculate radii = x*x + y*y. 
-    (e)  If radii <= 1.0, increment <i>circle_points</i>. 
-    (f)  Increment <i>square_points</i>. 
-    (g)  Increment <i>interval</i>. 
+    (e)  If radii <= 1.0, increment __**circle_points**__. 
+    (f)  Increment __**square_points**__. 
+    (g)  Increment __**interval**__. 
     (h)  If increment < N_SAMPLES, repeat from (b). 
-    (i)  Calculate pi = 4*(<i>circle_points</i>/<i>square_points</i>). 
+    (i)  Calculate pi = 4*(__**circle_points**__/__**square_points**__). 
     (j)  End.
-
-</pre></code>
+```
 {: .language-bash}
 
 Let's write a Python program, `pi.py`, to estimate π for us.
