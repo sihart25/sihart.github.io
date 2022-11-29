@@ -622,6 +622,7 @@ You can also increase the number of CPUs.
 > > | max memory per core |	3850 MB |	7700 MB	| 3850 MB|
 > > | max memory per node |	492,800 MB |	985,600 MB | 492,800 MB|
 > > | max gpus per node	 | N/A	| N/A	| 3 A100s|
+{: .discussion }
 
 > > ### Sulis Per Partition Limits
 > > 
@@ -633,6 +634,7 @@ You can also increase the number of CPUs.
 > > | max gpus per user	         | N/A	| N/A |	30	| 3 |	N/A |
 > > | max running jobs (per user) |	200	| 2	| 30	| 2 |	100 |
 > > | max jobs in queue (per user)|	500	| 4 |	200	| 4 |	200 |
+{: .discussion }
 
 ## How Much Does MPI Improve Performance?
 
@@ -722,3 +724,5 @@ parallelization, see the [parallel novice lesson][parallel-novice] lesson.
 > > | `squeue -j <job number>` |	Shows the progress of a specific job Slurm status codes can be found here|
 > > | `squeue -j <job number> --start` |	Shows when your job is expected to start |
 > > | `srun --account <project_name> --qos <qos> --time 5 --export=USER,HOME,PATH,TERM --pty /bin/bash` |	Starts an interactive session on a compute node; run from a login node |
+>>
+{: .discussion }
