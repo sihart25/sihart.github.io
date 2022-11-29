@@ -49,8 +49,9 @@ to calculate π through a command-line parameter.
 This script will only use a single CPU for its entire run, so it's classified
 as a serial process.
 
-> ### The Algorithm 
->    Set <i>N_SAMPLES</i>
+> ## The Algorithm 
+>   
+>    Set __N_SAMPLES__
 >    (a)  Initialize __**circle_points**__,__**square_points**__ and __**interval**__ to 0. 
 >    (b)  Generate random point x. 
 >    (c)  Generate random point y. 
