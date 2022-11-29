@@ -615,24 +615,24 @@ You can also increase the number of CPUs.
 * How much memory did it need?
 * How long did the job take to run?
 
-### Sulis Per node limits
+> > ### Sulis Per node limits
+> > 
+> > | Limit	| Compute |	High Memory |	GPU |
+> > | max no. of cores per node |	128	| 128	| 128|
+> > | max memory per core |	3850 MB |	7700 MB	| 3850 MB|
+> > | max memory per node |	492,800 MB |	985,600 MB | 492,800 MB|
+> > | max gpus per node	 | N/A	| N/A	| 3 A100s|
 
-|Limit	| Compute |	High Memory |	GPU |
-|max no. of cores per node |	128	| 128	| 128|
-|max memory per core |	3850 MB |	7700 MB	| 3850 MB|
-|max memory per node |	492,800 MB |	985,600 MB | 492,800 MB|
-|max gpus per node	 | N/A	| N/A	| 3 A100s|
-
-### Sulis Per Partition Limits
-
-|Limit                       |	compute |	devel	| gpu |	gpu-devel |	hmem |
-|max walltime	               | 48 hours	| 1 hour |	48 hours |	1 hour |	48 hours |
-|max cores per job	         | 3840	| 256	| 1290 |	128 |	384 |
-|max cores per user	         | 7680	| 256	| 1290 |	128 |	384 |
-|max gpus per job	           | N/A	| N/A	| 30	| 3	| N/A |
-|max gpus per user	         | N/A	| N/A |	30	| 3 |	N/A |
-|max running jobs (per user) |	200	| 2	| 30	| 2 |	100 |
-|max jobs in queue (per user)|	500	| 4 |	200	| 4 |	200 |
+> > ### Sulis Per Partition Limits
+> > 
+> > | Limit                       |	compute |	devel	| gpu |	gpu-devel |	hmem |
+> > | max walltime	               | 48 hours	| 1 hour |	48 hours |	1 hour |	48 hours |
+> > | max cores per job	         | 3840	| 256	| 1290 |	128 |	384 |
+> > | max cores per user	         | 7680	| 256	| 1290 |	128 |	384 |
+> > | max gpus per job	           | N/A	| N/A	| 30	| 3	| N/A |
+> > | max gpus per user	         | N/A	| N/A |	30	| 3 |	N/A |
+> > | max running jobs (per user) |	200	| 2	| 30	| 2 |	100 |
+> > | max jobs in queue (per user)|	500	| 4 |	200	| 4 |	200 |
 
 ## How Much Does MPI Improve Performance?
 
@@ -704,3 +704,21 @@ parallelization, see the [parallel novice lesson][parallel-novice] lesson.
 [parallel-novice]: http://www.hpc-carpentry.org/hpc-parallel-novice/
 [python-func]: https://swcarpentry.github.io/python-novice-inflammation/08-func/index.html
 [units]: https://en.wikipedia.org/wiki/Byte#Multiple-byte_units
+
+> > ## Sulis Cheat Sheet
+> > | Command	| Description |
+> > | `ln -sn <project directory> ~/<project directory name>` |	Creates a link from a project directory to your home directory|
+> > | `account-balance` |	Information about your Projects and QoS |
+> > | `mmlsquota --block-size auto` |	Shows how much space you are using in your home directory |
+> > | `module avail` |	Show the available modules on the system |
+> > | `module list`	| Show the loaded modules |
+> > | `module load JAVA` |	Load the basic modules and environment variables |
+> > | `module purge`	| Unload all loaded modules|
+> > | `module spider`	| Get information about a specific module |
+> > | `module unload` |	Unload a specific loaded module e.g. module unload Python/3.8.6-GCCCore-10.2.0 |
+> > | `sbatch <batch script>` |	Submits a batch script; note the job number|
+> > | `scancel -j <job number>` |	Cancels a slurm job |
+> > | `squeue -u $USER	| Show all of a user’s current jobs |
+> > | `squeue -j <job number>` |	Shows the progress of a specific job Slurm status codes can be found here|
+> > | `squeue -j <job number> --start` |	Shows when your job is expected to start |
+> > | `srun --account <project_name> --qos <qos> --time 5 --export=USER,HOME,PATH,TERM --pty /bin/bash` |	Starts an interactive session on a compute node; run from a login node |
