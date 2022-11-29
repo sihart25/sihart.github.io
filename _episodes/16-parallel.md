@@ -49,8 +49,8 @@ to calculate π through a command-line parameter.
 This script will only use a single CPU for its entire run, so it's classified
 as a serial process.
 
-> ## The Algorithm 
->   
+> ## The Algorithm
+>
 >    Set __N_SAMPLES__
 >    (a)  Initialize __**circle_points**__,__**square_points**__ and __**interval**__ to 0. 
 >    (b)  Generate random point x. 
@@ -63,7 +63,7 @@ as a serial process.
 >    (i)  Calculate pi = 4*(__**circle_points**__/__**square_points**__). 
 >    (j)  End.
 >
-{: .comment}
+{: .callout}
 
 Let's write a Python program, `pi.py`, to estimate π for us.
 Start by importing the `numpy` module for calculating the results,
@@ -723,7 +723,7 @@ parallelization, see the [parallel novice lesson][parallel-novice] lesson.
 >  | `module unload` |	Unload a specific loaded module e.g. module unload Python/3.8.6-GCCCore-10.2.0 |
 >  | `sbatch <batch script>` |	Submits a batch script; note the job number|
 >  | `scancel -j <job number>` |	Cancels a slurm job |
->  | `squeue -u $USER```{: .language-bash }	| Show all of a user’s current jobs |
+>  | `squeue -u $USER`	| Show all of a user’s current jobs |
 >  | `squeue -j <job number>` |	Shows the progress of a specific job Slurm status codes can be found here|
 >  | `squeue -j <job number> --start` |	Shows when your job is expected to start |
 >  | `srun --account <project_name> --qos <qos> --time 5 --export=USER,HOME,PATH,TERM --pty /bin/bash` |	Starts an interactive session on a compute node; run from a login node |
