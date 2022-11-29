@@ -49,22 +49,20 @@ to calculate π through a command-line parameter.
 This script will only use a single CPU for its entire run, so it's classified
 as a serial process.
 
-### The Algorithm 
-
-```
-    Set <i>N_SAMPLES</i>
-    (a)  Initialize __**circle_points**__,__**square_points**__ and __**interval**__ to 0. 
-    (b)  Generate random point x. 
-    (c)  Generate random point y. 
-    (d)  Calculate radii = x*x + y*y. 
-    (e)  If radii <= 1.0, increment __**circle_points**__. 
-    (f)  Increment __**square_points**__. 
-    (g)  Increment __**interval**__. 
-    (h)  If increment < N_SAMPLES, repeat from (b). 
-    (i)  Calculate pi = 4*(__**circle_points**__/__**square_points**__). 
-    (j)  End.
-```
-{: .language-bash}
+> ### The Algorithm 
+>    Set <i>N_SAMPLES</i>
+>    (a)  Initialize __**circle_points**__,__**square_points**__ and __**interval**__ to 0. 
+>    (b)  Generate random point x. 
+>    (c)  Generate random point y. 
+>    (d)  Calculate radii = x*x + y*y. 
+>    (e)  If radii <= 1.0, increment __**circle_points**__. 
+>    (f)  Increment __**square_points**__. 
+>    (g)  Increment __**interval**__. 
+>    (h)  If increment < N_SAMPLES, repeat from (b). 
+>    (i)  Calculate pi = 4*(__**circle_points**__/__**square_points**__). 
+>    (j)  End.
+>
+{: .comment}
 
 Let's write a Python program, `pi.py`, to estimate π for us.
 Start by importing the `numpy` module for calculating the results,
@@ -613,18 +611,21 @@ You can also increase the number of CPUs.
 * How much memory did it need?
 * How long did the job take to run?
 
-> ### Sulis Per node limits
+> ## Sulis Per node limits
 >  
 >  | Limit	| Compute |	High Memory |	GPU |
+>  | ----------- | ----------- | ----------- | ----------- |
 >  | max no. of cores per node |	128	| 128	| 128|
 >  | max memory per core |	3850 MB |	7700 MB	| 3850 MB|
 >  | max memory per node |	492,800 MB |	985,600 MB | 492,800 MB|
 >  | max gpus per node	 | N/A	| N/A	| 3 A100s|
+>
 {: .callout}
 
->  ### Sulis Per Partition Limits
+> ## Sulis Per Partition Limits
 >  
 >  | Limit                       |	compute |	devel	| gpu |	gpu-devel |	hmem |
+> | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 >  | max walltime	               | 48 hours	| 1 hour |	48 hours |	1 hour |	48 hours |
 >  | max cores per job	         | 3840	| 256	| 1290 |	128 |	384 |
 >  | max cores per user	         | 7680	| 256	| 1290 |	128 |	384 |
@@ -632,6 +633,7 @@ You can also increase the number of CPUs.
 >  | max gpus per user	         | N/A	| N/A |	30	| 3 |	N/A |
 >  | max running jobs (per user) |	200	| 2	| 30	| 2 |	100 |
 >  | max jobs in queue (per user)|	500	| 4 |	200	| 4 |	200 |
+>
 {: .callout}
 
 ## How Much Does MPI Improve Performance?
@@ -705,22 +707,24 @@ parallelization, see the [parallel novice lesson][parallel-novice] lesson.
 [python-func]: https://swcarpentry.github.io/python-novice-inflammation/08-func/index.html
 [units]: https://en.wikipedia.org/wiki/Byte#Multiple-byte_units
 
->  ## Sulis Cheat Sheet
+> ## Sulis Cheat Sheet
+>
 >  | Command	| Description |
->  | ```ln -sn <project directory> ~/<project directory name>```{: .language-bash } |	Creates a link from a project directory to your home directory|
->  | ```account-balance```{: .language-bash } |	Information about your Projects and QoS |
->  | ```mmlsquota --block-size auto```{: .language-bash } |	Shows how much space you are using in your home directory |
->  | ```module avail```{: .language-bash } |	Show the available modules on the system |
->  | ```module list```{: .language-bash }	| Show the loaded modules |
->  | ```module load JAVA```{: .language-bash } |	Load the basic modules and environment variables |
->  | ```module purge```{: .language-bash }	| Unload all loaded modules|
->  | ```module spider```{: .language-bash }	| Get information about a specific module |
->  | ```module unload```{: .language-bash } |	Unload a specific loaded module e.g. module unload Python/3.8.6-GCCCore-10.2.0 |
->  | ```sbatch <batch script>```{: .language-bash } |	Submits a batch script; note the job number|
->  | ```scancel -j <job number>```{: .language-bash } |	Cancels a slurm job |
->  | ```squeue -u $USER```{: .language-bash }	| Show all of a user’s current jobs |
->  | ```squeue -j <job number>```{: .language-bash } |	Shows the progress of a specific job Slurm status codes can be found here|
->  | ```squeue -j <job number> --start```{: .language-bash } |	Shows when your job is expected to start |
->  | ```srun --account <project_name> --qos <qos> --time 5 --export=USER,HOME,PATH,TERM --pty /bin/bash```{: .language-bash } |	Starts an interactive session on a compute node; run from a login node |
+>  | ----------- | ----------- |
+>  | `ln -sn <project directory> ~/<project directory name>` |	Creates a link from a project directory to your home directory|
+>  | `account-balance` |	Information about your Projects and QoS |
+>  | `mmlsquota --block-size auto` |	Shows how much space you are using in your home directory |
+>  | `module avail` |	Show the available modules on the system |
+>  | `module list`	| Show the loaded modules |
+>  | `module load JAVA` |	Load the basic modules and environment variables |
+>  | `module purge`	| Unload all loaded modules|
+>  | `module spider`	| Get information about a specific module |
+>  | `module unload` |	Unload a specific loaded module e.g. module unload Python/3.8.6-GCCCore-10.2.0 |
+>  | `sbatch <batch script>` |	Submits a batch script; note the job number|
+>  | `scancel -j <job number>` |	Cancels a slurm job |
+>  | `squeue -u $USER```{: .language-bash }	| Show all of a user’s current jobs |
+>  | `squeue -j <job number>` |	Shows the progress of a specific job Slurm status codes can be found here|
+>  | `squeue -j <job number> --start` |	Shows when your job is expected to start |
+>  | `srun --account <project_name> --qos <qos> --time 5 --export=USER,HOME,PATH,TERM --pty /bin/bash` |	Starts an interactive session on a compute node; run from a login node |
 >
 {: .discussion }
