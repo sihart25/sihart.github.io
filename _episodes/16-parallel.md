@@ -63,7 +63,7 @@ as a serial process.
 >    (i)  Calculate pi = 4*(__**circle_points**__/__**square_points**__). 
 >    (j)  End.
 >
-{: .callout}
+{: .callout}   
 
 Let's write a Python program, `pi.py`, to estimate π for us.
 Start by importing the `numpy` module for calculating the results,
