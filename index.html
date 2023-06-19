@@ -18,7 +18,7 @@
             <img src="./images/NNs_2_variables.png" width="384" height="216" style="border:2px solid black">
         </div>
 
-        <h2>Start here</h2> 
+        <h2>Start here</h2>
         Let's start with a simple example. Say you're helping a friend who wants to buy a house. She was quoted $400,000 for a 2000 sq ft house (185 meters). Is this a good price or not?
 
         It's not easy to tell without a frame of reference. So you ask your friends who have bought houses in that same neighborhoods, and you end up with three data points:
@@ -60,7 +60,7 @@
 
         <p class="gif-space" />
 
-        <img src="./images/2a_data_points_graph_animated.gif" />
+        <img src="./images/2a_data_points_graph_animated.gif" width="840" height="459" style="border:2px solid black">
 
         <p class="gif-space" />
 
@@ -73,7 +73,7 @@
 
         <p class="gif-space" />
 
-        <img src="./images/3_data_points_error_animated.gif" />
+        <img src="./images/3_data_points_error_animated.gif" width="840" height="459" style="border:2px solid black">
         <p class="gif-space" />
         <div>
             That's quite a bit of yellow. Yellow is bad. Yellow is error. We want to shrink yellow as much as we can.
@@ -126,7 +126,7 @@
         This is now our definition of doing better -- a better model is one that has less error. Error is measured as the average of the errors for each point in our data set. For each point, the error is measured by the difference between the actual value and the predicted value, raised to the power of 2. This is called [Mean Square Error](http://mste.illinois.edu/patel/amar430/meansquare.html). Using it as a guide to train our model makes it our **loss function** (also, **cost function**).
         Now that we defined our measuring stick for what makes a better model, let's experiment with a couple more weight values and compare them with our average pick:
         <p class="gif-space" />
-        ![Line errors](./images/4_lines_and_errors_animated.gif)
+        <img src="./images/4_lines_and_errors_animated.gif width="840" height="459" style="border:2px solid black">
         <div class="img-div" markdown="0">
             We can't improve much on the model by varying the weight any more. But if we add a bias we can find values that improve the model.
         </div>
@@ -137,7 +137,7 @@
         </div>
         We can generalize it by saying that a neural network with one input and one output (*spoiler warning:* and no hidden layers) looks like this:
         <div class="img-div" markdown="0">
-            <img src="./images/6_NNs_bias_2.png"  width="384" height="106" style="border:2px solid black">
+            <img src="./images/6_NNs_bias_2.png" width="384" height="106" style="border:2px solid black">
         </div>
         In this graph, W and b are values we find during the training process. X is the input we plug into the formula (area in sq ft in our example). Y is the predicted price.
         Calculating a prediction now uses this formula:
@@ -146,7 +146,7 @@
         </div>
         So our current model calculates predictions by plugging in the area of house as x in this formula:
         <div class="img-div" markdown="0">
-            <img src="./images/8_NNs_formula_ex.png"  width="384" height="106" style="border:2px solid black">
+            <img src="./images/8_NNs_formula_ex.png" width="384" height="106" style="border:2px solid black">
         </div>
         <h2> Train Your Dragon (NN) <a name="train_your_dragon" href="#train_your_dragon"></a></h2>
         How about you take a crack at training our toy neural network? Minimize the loss function by tweaking the weight and bias dials. Can you get an error value below 799?
@@ -272,12 +272,12 @@
         </div>
         Our neural network with two variables looks like this:
         <div class="img-div" markdown="0">
-            <img src="/images/8a_NNs_2_variables.png"  width="384" height="106" style="border:2px solid black">
+            <img src="/images/8a_NNs_2_variables.png" width="384" height="106" style="border:2px solid black">
         </div>
         We now have to find two weights (one for each input) and one bias to create our new model.
         Calculating Y looks like this:
         <div class="img-div" markdown="0">
-            <img src="/images/9_NNs_formula_two_variables.png"  width="384" height="106" style="border:2px solid black">
+            <img src="/images/9_NNs_formula_two_variables.png" width="384" height="106" style="border:2px solid black">
         </div>
         But how do we find w1 and w2? This is a little trickier than when we only had to worry about one weight value. How much does having an extra bathroom change how we predict the value of a home?
         Take a stab at finding the right weights and bias. You will start here to see the complexity we start getting into as the number of our inputs increase. We start losing the ability to create simple 2d shapes that allow us to visualize the model at a glance. Instead, we'll have to mainly rely on how the error value is evolving as we tweak our model parameters.
