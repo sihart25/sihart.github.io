@@ -1488,6 +1488,14 @@ references {
   font-size: 80%;
 }
 
+.center_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border:2px solid black;
+}
+
 .small-image {
   max-width: 450px;
 }
