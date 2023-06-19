@@ -35,13 +35,13 @@
             <img src="./images/NNs_2_variables.png" width="384" height="216" class="center_image">
         </div>
 
-        <h2>Start here</h2>
+        <h2 style="align-content:center">Start here</h2>
         <div class="center_no_black" style="max-width:max-content">
             Let's start with a simple example. Say you're helping a friend who wants to buy a house. She was quoted $400,000 for a 2000 sq ft house (185 meters). Is this a good price or not?
 
             It's not easy to tell without a frame of reference. So you ask your friends who have bought houses in that same neighborhoods, and you end up with three data points:
         </div>
-        <div class="one_variable">
+        <div class="one_variable" style="align-content:center">
             <table>
                 <thead>
                     <tr>
@@ -99,7 +99,7 @@
 
         <p class="gif-space" />
 
-        <h3> Harder, Better, Faster, Stronger</h3>
+        <h3 style="align-content:center"> Harder, Better, Faster, Stronger</h3>
 
         <div class="center_no_black" style="max-width:max-content">
             Can we do better than estimate the price based on the average of our data points? Let's try. Let's first define what it means to be better in this scenario. If we apply our model to the three data points we have, how good of a job would it do?
@@ -113,7 +113,7 @@
         <div class="center_no_black" style="max-width:max-content">
             That's quite a bit of yellow. Yellow is bad. Yellow is error. We want to shrink yellow as much as we can.
         </div>
-        <div class="one_variable">
+        <div class="one_variable" style="align-content:center">
             <div class="one_variable">
                 <table>
                     <thead>
@@ -247,7 +247,7 @@
         <div class="center_no_black" style="max-width:max-content">
             Congratulations on manually training your first neural network! Let's look at how to automate this training process. Below is another example with an additional autopilot-like functionality. These are the GD Step buttons. They use an algorithm called "Gradient Descent" to try to step towards the correct weight and bias values that minimize the loss function.
         </div>
-        <div class="container" markdown="0">
+        <div class="container" style="align-content:center">
             <div class="row">
                 <div class="col-sm-6 graphs">
                     <div id="training-one-gd-chart" class="training-chart"></div>
@@ -315,7 +315,7 @@
             Say your friend does a bit more research and finds a bunch more data points. She also finds out how many bathrooms each house has:
         </div>
 
-        <div class="two_variables">
+        <div class="two_variables" style="align-content:center">
             <thead>
                 <tr>
                     <th>Area (x)</th>
@@ -394,7 +394,7 @@
             But how do we find w1 and w2? This is a little trickier than when we only had to worry about one weight value. How much does having an extra bathroom change how we predict the value of a home?
             Take a stab at finding the right weights and bias. You will start here to see the complexity we start getting into as the number of our inputs increase. We start losing the ability to create simple 2d shapes that allow us to visualize the model at a glance. Instead, we'll have to mainly rely on how the error value is evolving as we tweak our model parameters.
         </div>
-        <div class="container" markdown="0">
+        <div class="container" style="align-content:center">
             <div class="row">
                 <div class="col-sm-6 graphs">
                     <div id="training-two-chart" class="error-chart"></div>
@@ -463,13 +463,13 @@
         <div class="center_no_black" style="max-width:max-content">
             Our trusty gradient descent is here to help once again. It still is valuable in helping us find the right weights and bias.
         </div>
-        <h2> Features </h2>
+        <h2 style="align-content:center"> Features </h2>
 
         <div class="center_no_black" style="max-width:max-content">
             Now that you've seen neural networks with one and two features, you can sort of figure out how to add additional features and use them to calculate your predictions. The number of weights will continue to grow, and our implementation of gradient descent will have to be tweaked as we add each feature so that it can update the new weights associated with the new feature.
             It's important to note here that we don't blindly feed the network everything we know about our examples. We have to be selective about which features we feed the model. Feature selection/processing is an entire discipline with its own set of best practices and considerations. If you want to see an example of the process of examining a dataset to choose which features to feed a prediction model, check out  [A Journey Through Titanic](https://www.kaggle.com/omarelgabry/titanic/a-journey-through-titanic). It's a notebook where [Omar EL Gabry](https://twitter.com/Omar_ElGabry) narrates his process for solving Kaggle's Titanic challenge. Kaggle makes available the passenger's manifest of the Titanic including data like name, sex, age, cabin, and whether the person survived or not. The challenge is to build a model that predicts whether a person survived or not given their other information.
         </div>
-        <h2> Classification </h2>
+        <h2 style="align-content:center"> Classification </h2>
 
         <div class="center_no_black" style="max-width:max-content">
             Let's continue to tweak our example. Assume your friend gives you a list of houses. This time, she has labeled which ones she thinks have a good size and number of bathrooms:
@@ -507,7 +507,7 @@
             | softmax([ 1, 2, 4 ]) | [ 0.04,  0.11,  0.84 ] |
             As you can see in the last two rows, softmax extends to any number of inputs. So now if our friend adds a third label (say "Good, but I'll have to airbnb one room"), softmax scales to accomedate that change.
             Take a second to explore the shape of the network as you vary the number of features (x1, x2, x3...etc) (which can be area, number of bathrooms, price, proximity to school/work...etc) and vary the number of classes (y1, y2, y3...etc) (which can be "too expensive", "good deal", "good if I airbnb", "too small"):
-            <table markdown="0">
+            <table style="align-content:center">
                 <tr>
                     <td>
                         Features (x):
