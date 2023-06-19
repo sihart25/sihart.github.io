@@ -1486,6 +1486,10 @@ references {
   border: 1px solid #ddd;
   color: #777;
   font-size: 80%;
+} 
+
+table {
+    margin: 0 auto; /* or margin: 0 auto 0 auto */
 }
 
 .center_image {

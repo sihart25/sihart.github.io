@@ -30,18 +30,13 @@
     <main>
         <h1>A Visual and Interactive Guide to the Basics of Neural Networks!</h1>
 
-
-        <div class="img-div" markdown="0">
-            <img src="./images/NNs_2_variables.png" width="384" height="216" class="center_image">
-        </div>
-
         <h2 style="align-content:center">Start here</h2>
         <div class="center_no_black" style="max-width:max-content">
             Let's start with a simple example. Say you're helping a friend who wants to buy a house. She was quoted $400,000 for a 2000 sq ft house (185 meters). Is this a good price or not?
 
             It's not easy to tell without a frame of reference. So you ask your friends who have bought houses in that same neighborhoods, and you end up with three data points:
         </div>
-        <div class="one_variable" style="align-content:center">
+        <div class="one_variable">
             <table>
                 <thead>
                     <tr>
@@ -114,48 +109,46 @@
             That's quite a bit of yellow. Yellow is bad. Yellow is error. We want to shrink yellow as much as we can.
         </div>
         <div class="one_variable" style="align-content:center">
-            <div class="one_variable">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Area (x)</th>
-                            <th>Price ($1000) (<span class="y_">y_</span>)</th>
-                            <th>Prediction (<span class="y">y</span>)</th>
-                            <th><span class="y_">y_</span>-<span class="y">y</span></th>
-                            <th>(<span class="y_">y_</span>-<span class="y">y</span>)²</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>2,104</td>
-                            <td>399.9</td>
-                            <td>379</td>
-                            <td>21</td>
-                            <td>449</td>
-                        </tr>
-                        <tr>
-                            <td>1,600</td>
-                            <td>329.9</td>
-                            <td>288</td>
-                            <td>42</td>
-                            <td>1756</td>
-                        </tr>
-                        <tr>
-                            <td>2,400</td>
-                            <td>369</td>
-                            <td>432</td>
-                            <td>-63</td>
-                            <td>3969</td>
-                        </tr>
-                        <tr>
-                            <td> </td>
-                            <td> </td>
-                            <td colspan="2" align="right"><span class="total"> Average:</span></td>
-                            <td><b>2,058</b></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Area (x)</th>
+                        <th>Price ($1000) (<span class="y_">y_</span>)</th>
+                        <th>Prediction (<span class="y">y</span>)</th>
+                        <th><span class="y_">y_</span>-<span class="y">y</span></th>
+                        <th>(<span class="y_">y_</span>-<span class="y">y</span>)²</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2,104</td>
+                        <td>399.9</td>
+                        <td>379</td>
+                        <td>21</td>
+                        <td>449</td>
+                    </tr>
+                    <tr>
+                        <td>1,600</td>
+                        <td>329.9</td>
+                        <td>288</td>
+                        <td>42</td>
+                        <td>1756</td>
+                    </tr>
+                    <tr>
+                        <td>2,400</td>
+                        <td>369</td>
+                        <td>432</td>
+                        <td>-63</td>
+                        <td>3969</td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td> </td>
+                        <td colspan="2" align="right"><span class="total"> Average:</span></td>
+                        <td><b>2,058</b></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
         <div class="center_no_black" style="max-width:max-content">
@@ -164,7 +157,7 @@
             Now that we defined our measuring stick for what makes a better model, let's experiment with a couple more weight values and compare them with our average pick:
         </div>
         <p class="gif-space" />
-        <img src="./images/4_lines_and_errors_animated.gif width="840" height="459" style="border:2px solid black">
+        <img src="./images/4_lines_and_errors_animated.gif" width="840" height="459" style="border:2px solid black">
 
         <div class="center_no_black" style="max-width:max-content">
             We can't improve much on the model by varying the weight any more. But if we add a bias we can find values that improve the model.
@@ -316,64 +309,67 @@
         </div>
 
         <div class="two_variables" style="align-content:center">
-            <thead>
-                <tr>
-                    <th>Area (x)</th>
-                    <th>Bathrooms (x2)</th>
-                    <th>Price ($1000)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>2,104</td>
-                    <td>3</td>
-                    <td>399.9</td>
-                </tr>
-                <tr>
-                    <td>1,600</td>
-                    <td>3</td>
-                    <td> 329.9</td>
-                </tr>
-                <tr>
-                    <td>2,400</td>
-                    <td>3</td>
-                    <td>369.000</td>
-                </tr>
-                <tr>
-                    <td>1,416</td>
-                    <td>2</td>
-                    <td>232.000</td>
-                </tr>
-                <tr>
-                    <td>3,000</td>
-                    <td>4</td>
-                    <td>539.900</td>
-                </tr>
-                <tr>
-                    <td>1,985</td>
-                    <td>4</td>
-                    <td>299.900</td>
-                </tr>
-                <tr>
-                    <td>1,534 </td>
-                    <td>3</td>
-                    <td>314.900</td>
-                </tr>
-                <tr>
-                    <td>1,427  </td>
-                    <td>3</td>
-                    <td>198.999</td>
-                </tr>
-                <tr>
-                    <td>1,380  </td>
-                    <td>3</td>
-                    <td>212.000</td>
-                </tr>
-                <tr>
-                    <td>1,494 </td>
-                    <td>3</td>
-                    <td>242,500</td>
-                </tr> 
+            <table>
+                <thead>
+                    <tr>
+                        <th>Area (x)</th>
+                        <th>Bathrooms (x2)</th>
+                        <th>Price ($1000)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2,104</td>
+                        <td>3</td>
+                        <td>399.9</td>
+                    </tr>
+                    <tr>
+                        <td>1,600</td>
+                        <td>3</td>
+                        <td> 329.9</td>
+                    </tr>
+                    <tr>
+                        <td>2,400</td>
+                        <td>3</td>
+                        <td>369.000</td>
+                    </tr>
+                    <tr>
+                        <td>1,416</td>
+                        <td>2</td>
+                        <td>232.000</td>
+                    </tr>
+                    <tr>
+                        <td>3,000</td>
+                        <td>4</td>
+                        <td>539.900</td>
+                    </tr>
+                    <tr>
+                        <td>1,985</td>
+                        <td>4</td>
+                        <td>299.900</td>
+                    </tr>
+                    <tr>
+                        <td>1,534 </td>
+                        <td>3</td>
+                        <td>314.900</td>
+                    </tr>
+                    <tr>
+                        <td>1,427  </td>
+                        <td>3</td>
+                        <td>198.999</td>
+                    </tr>
+                    <tr>
+                        <td>1,380  </td>
+                        <td>3</td>
+                        <td>212.000</td>
+                    </tr>
+                    <tr>
+                        <td>1,494 </td>
+                        <td>3</td>
+                        <td>242,500</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         <div class="center_no_black" style="max-width:max-content">
             Our neural network with two variables looks like this:
@@ -475,18 +471,140 @@
             Let's continue to tweak our example. Assume your friend gives you a list of houses. This time, she has labeled which ones she thinks have a good size and number of bathrooms:
         </div>
         <div class="two_variables">
-            | Area (sq ft) (x1) | Bathrooms (x2) | Label (y) |
-            | --- | --- | --- |
-            | 2,104 |  3 | Good |
-            | 1,600 |  3 | Good |
-            | 2,400 |  3 | Good |
-            | 1,416 | 	2 | Bad |
-            | 3,000 | 	4 | Bad |
-            | 1,985 | 	4 | Good |
-            | 1,534 | 	3 | Bad |
-            | 1,427 | 	3 | Good |
-            | 1,380 | 	3 | Good |
-            | 1,494 | 	3 | Good |
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            Area (sq ft) (x)
+                        </th>
+                        <th>Bathrooms (x2)</th>
+                        <th>Label (y) </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            2,104
+                        </td>
+                        <td>
+                            3
+                        </td>
+                        <td>
+                            Good
+                        <td>
+                    </tr>
+                    <tr>
+                        <td>
+                            1,600
+                        </td>
+                        <td>
+                            3
+                        </td>
+                        <td>
+                            Good
+                        <td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2,400
+                        </td>
+                        <td>
+                            3
+                        </td>
+                        <td>
+                            Good
+                        <td>
+                    </tr>
+                    <tr>
+                        <td>
+                            1,416
+                        </td>
+                        <td>
+                            2
+                        </td>
+                        <td>
+                            Bad
+                        <td>
+                    </tr>
+                    <tr>
+                        <td>
+                            1,416
+                        </td>
+                        <td>
+                            2
+                        </td>
+                        <td>
+                            Bad
+                        <td>
+                    </tr>
+                    <tr>
+                        <td>
+                            3,000
+                        </td>
+                        <td>
+                            4
+                        </td>
+                        <td>
+                            Bad
+                        <td>
+                    </tr>
+                    <tr>
+                        <td>
+                            1,985
+                        </td>
+                        <td>
+                            4
+                        </td>
+                        <td>
+                            Good
+                        <td>
+                    </tr>
+                    <tr>
+                        <td>
+                            1,534
+                        </td>
+                        <td>
+                            3
+                        </td>
+                        <td>
+                            bad
+                        <td>
+                    </tr>
+                    <tr>
+                        <td>
+                            1,427
+                        </td>
+                        <td>
+                            3
+                        </td>
+                        <td>
+                            good
+                        <td>
+                    </tr>
+                    <tr>
+                        <td>
+                            1,380
+                        </td>
+                        <td>
+                            3
+                        </td>
+                        <td>
+                            good
+                        <td>
+                    </tr>
+                    <tr>
+                        <td>
+                            1,494
+                        </td>
+                        <td>
+                            3
+                        </td>
+                        <td>
+                            good
+                        <td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
         <div class="center_no_black" style="max-width:max-content">
@@ -496,61 +614,65 @@
             One way we can transform the network we've seen into a classification network is to have it output two values -- one for each class (our classes now being "good" and "bad"). We then pass these values through an operation called "[softmax](https://rasbt.github.io/mlxtend/user_guide/classifier/SoftmaxRegression/)". The output of softmax is the probability of each class. For example, say that layer of the network outputs 2 for "good" and 4 for "bad", if we feed [2, 4] to softmax, it will return [0.11,  0.88] as the output. Which translates the values to say the network is 88% sure that the inputted value is "bad" and our friend would not like that house.
             Softmax takes an array and outputs an array of the same length. Notice that its outputs are all positive and sum up to 1 -- which is useful when we're outputting a probability value. Also notice that even though 4 is double 2, its probability is not only double, but is eight times that of 2. This is a useful property that exaggerates the difference in output thus improving our training process.
         </div>
-            |  | output |
-            | --- | --- |
-            | softmax([ 1 ]) | [ 1 ] |
-            | softmax([ 1, 1 ]) | [ 0.5, 0.5 ] |
-            | softmax([ 0, 1 ]) | [ 0.26,  0.73 ] |
-            | softmax([ 2, 4 ]) | [ 0.11,  0.88 ] |
-            | softmax([ 5, 10 ]) | [ 0.007,  0.993 ] |
-            | softmax([ -1, 0, 1 ]) | [ 0.09,  0.24,  0.66 ] |
-            | softmax([ 1, 2, 4 ]) | [ 0.04,  0.11,  0.84 ] |
+        <table>
+            <thead><tr><td>  </td><td> output </td></tr></thead>
+            <tbody>
+
+                <tr><td> softmax([ 1 ]) </td><td> [ 1 ] </td></tr>
+                <tr><td> softmax([ 1, 1 ]) </td><td> [ 0.5, 0.5 ] </td></tr>
+                <tr><td> softmax([ 0, 1 ]) </td><td> [ 0.26,  0.73 ] </td></tr>
+                <tr><td> softmax([ 2, 4 ]) </td><td> [ 0.11,  0.88 ] </td></tr>
+                <tr><td> softmax([ 5, 10 ]) </td><td> [ 0.007,  0.993 ] </td></tr>
+                <tr><td> softmax([ -1, 0, 1 ]) </td><td> [ 0.09,  0.24,  0.66 ] </td></tr>
+                <tr><td> softmax([ 1, 2, 4 ]) </td><td> [ 0.04,  0.11,  0.84 ] </td></tr>
+            </tbody>
+        </table>
+        <div class="center_no_black" style="max-width:max-content">
             As you can see in the last two rows, softmax extends to any number of inputs. So now if our friend adds a third label (say "Good, but I'll have to airbnb one room"), softmax scales to accomedate that change.
             Take a second to explore the shape of the network as you vary the number of features (x1, x2, x3...etc) (which can be area, number of bathrooms, price, proximity to school/work...etc) and vary the number of classes (y1, y2, y3...etc) (which can be "too expensive", "good deal", "good if I airbnb", "too small"):
-            <table style="align-content:center">
-                <tr>
-                    <td>
-                        Features (x):
-                    </td>
-                    <td>
-                        <div class="input-group">
-                            <span class="input-group-btn">
-                                <button type="button" class="btn btn-default btn-number" data-type="minus" data-field="quant[1]">
-                                    <span class="glyphicon glyphicon-minus"></span>
-                                </button>
-                            </span>
-                            <input type="text" name="quant[1]" class="form-control input-number" value="2">
-                            <span class="input-group-btn">
-                                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
-                                    <span class="glyphicon glyphicon-plus"></span>
-                                </button>
-                            </span>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Classes (y):
-                    </td>
-                    <td>
-                        <div class="input-group">
-                            <span class="input-group-btn">
-                                <button type="button" class="btn btn-default btn-number" data-type="minus" data-field="quant[2]">
-                                    <span class="glyphicon glyphicon-minus"></span>
-                                </button>
-                            </span>
-                            <input type="text" name="quant[2]" class="form-control input-number" value="2">
-                            <span class="input-group-btn">
-                                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[2]">
-                                    <span class="glyphicon glyphicon-plus"></span>
-                                </button>
-                            </span>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-            <div id="shallow-neural-network-graph" class="nn-graph-area"></div>
-            You can see an example of how to create and train this network using TensorFlow in [this notebook](https://github.com/jalammar/simpleTensorFlowClassificationExample/blob/master/Basic%20Classification%20Example%20with%20TensorFlow.ipynb) I created to accompany this post.
+        </div>
+        <table style="align-content:center">
+            <tr>
+                <td>
+                    Features (x):
+                </td>
+                <td>
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-default btn-number" data-type="minus" data-field="quant[1]">
+                                <span class="glyphicon glyphicon-minus"></span>
+                            </button>
+                        </span>
+                        <input type="text" name="quant[1]" class="form-control input-number" value="2">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </button>
+                        </span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Classes (y):
+                </td>
+                <td>
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-default btn-number" data-type="minus" data-field="quant[2]">
+                                <span class="glyphicon glyphicon-minus"></span>
+                            </button>
+                        </span>
+                        <input type="text" name="quant[2]" class="form-control input-number" value="2">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[2]">
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </button>
+                        </span>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </main>
     <script type="text/javascript" src="/js/nnVizUtils.js"></script>
     <!-- Visualizations 1 Weight & bias, and 2 Gradient Descent -->
