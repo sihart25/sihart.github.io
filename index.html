@@ -36,13 +36,11 @@
         </div>
 
         <h2>Start here</h2>
+        <div class="center_image" style="margin-block">
         Let's start with a simple example. Say you're helping a friend who wants to buy a house. She was quoted $400,000 for a 2000 sq ft house (185 meters). Is this a good price or not?
 
         It's not easy to tell without a frame of reference. So you ask your friends who have bought houses in that same neighborhoods, and you end up with three data points:
-
-
-
-        {::options parse_block_html="true" /}
+        </div>
         <div class="one_variable">
 
             | Area (sq ft) (x) | Price (y) |
@@ -363,6 +361,7 @@
                 </div>
             </div>
         </div>
+
         Our trusty gradient descent is here to help once again. It still is valuable in helping us find the right weights and bias.
         <h2> Features </h2>
         Now that you've seen neural networks with one and two features, you can sort of figure out how to add additional features and use them to calculate your predictions. The number of weights will continue to grow, and our implementation of gradient descent will have to be tweaked as we add each feature so that it can update the new weights associated with the new feature.
