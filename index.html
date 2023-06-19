@@ -67,7 +67,7 @@
             Welcome to your first neural network! Now it's not quite at Siri level yet, but now you know the fundamental building block. And it looks like this:
 
         </div>
-        <div class="img-div" markdown="0">
+        <div class="img-div" >
             <img src="./images/1_simple_NN_1.png" width="384" height="140" class="center_image">
         </div>
 
@@ -77,12 +77,13 @@
             Multiplying 2,000 sq ft by 180 gives us $360,000. That's all there is to it at this level. Calculating the prediction is simple multiplication. But before that, we needed to think about the weight we'll be multiplying by. Here we started with an average, later we'll look at better algorithms that can scale as we get more inputs and more complicated models. Finding the weight is our "training" stage. So whenever you hear of someone "training" a neural network, it just means finding the weights we use to calculate the prediction.
 
         </div>
-        <div class="img-div" markdown="0">
+        <div class="img-div" >
             <img src="./images/2_NNs_formula_no_bias.png" width="384" height="106" class="center_image">
         </div>
 
         <div class="center_no_black" style="max-width:max-content">
-            This is a form of prediction. This is a simple predictive model that takes an input, does a calculation, and gives an output (since the output can be of continuous values, the technical name for what we have would be a "regression model")
+            This is a form of prediction.
+            This is a simple predictive model that takes an input, does a calculation, and gives an output (since the output can be of continuous values, the technical name for what we have would be a "regression model")
 
             Let us visualize this process (for simplicity, let's switch our price unit from $1 to $1000. Now our weight is 0.180 rather than 180):
         </div>
@@ -94,7 +95,7 @@
 
         <p class="gif-space" />
 
-        <h3 style="align-content:center"> Harder, Better, Faster, Stronger</h3>
+        <h3 style="align-content:center;max-width:max-content"> Harder, Better, Faster, Stronger</h3>
 
         <div class="center_no_black" style="max-width:max-content">
             Can we do better than estimate the price based on the average of our data points? Let's try. Let's first define what it means to be better in this scenario. If we apply our model to the three data points we have, how good of a job would it do?
